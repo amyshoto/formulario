@@ -1,0 +1,128 @@
+/* Estilo general del cuerpo */
+body {
+    padding: 0;
+    margin: 0;
+    background: radial-gradient(#541E6D, #1E306D);
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Estilo para el título */
+h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 60px;
+    margin-top: 10%;
+    text-align: center;
+}
+
+/* Estilo para el formulario y la entrada de texto */
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 60%;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilo para el texto del placeholder */
+input::placeholder {
+    font-family: 'Montserrat', sans-serif; 
+    color:black; 
+    font-size: 16px; 
+    opacity: 1; 
+}
+
+/* Estilo para el botón de agregar */
+button {
+    padding: 15px;
+    background-color: #5b4caf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button:hover {
+    background-color: #483e8f;
+}
+
+/* Lista de tareas */
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 60%;
+    margin: 0 auto;
+}
+
+li {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+/* Botón de eliminar tarea */
+button.delete {
+    background-color: #8184c7;
+    border: none;
+    color: #40246d;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.delete:hover {
+    background-color: #6660a7;
+}
+
+/* Para alinear el formulario */
+.alinear {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    input {
+        width: 80%;
+    }
+
+    ul {
+        width: 90%;
+    }
+}
